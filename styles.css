@@ -1,57 +1,64 @@
+/* Comprehensive styling for portfolio website */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
 }
 
-.header {
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
-  color: white;
-  padding: 20px;
-  text-align: center;
+footer {
+    text-align: center;
+    padding: 12px 0;
+    background: #333;
+    color: #ffffff;
 }
 
-.card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.2s;
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.card:hover {
-  transform: scale(1.05);
+h1, h2, h3 {
+    color: #007bff;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
+button {
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.card h2 {
-  font-size: 1.5em;
-  margin: 10px;
-}
-
-.card p {
-  margin: 10px;
-  line-height: 1.5;
-}
-
-.footer {
-  background: #0072ff;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-@media (max-width: 768px) {
-  .header, .footer {
-    padding: 15px;
-  }
-  .container {
-    gap: 15px;
-    padding: 15px;
-  }
+button:hover {
+    background: #0056b3;
 }
