@@ -1,1 +1,242 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <meta name="description" content="A modern HTML5 website structure with security headers and best practices.">\n    <title>My Secure HTML5 Website</title>\n    <link rel="stylesheet" href="styles.css">\n    \n    <script>\n        // Security headers for modern browsers\n        if (window.location.protocol !== 'https:') {\n            window.location.href = 'https:' + window.location.href.substring(window.location.protocol.length);\n        }\n    </script>\n</head>\n<body>\n    <header>\n        <h1>Welcome to My Secure Website</h1>\n    </header>\n    <main>\n        <p>This is a secure and modern web page structure using HTML5.</p>\n    </main>\n    <footer>\n        <p>&copy; 2026 My Secure Website</p>\n    </footer>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Discover the World's Hidden Wonders - Travel Guide & Stories">
+    <meta name="keywords" content="travel, destinations, discover, adventure">
+    <meta name="author" content="SoutaAizawa55">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Discover the World's Hidden Wonders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Logo</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Inspiration</a></li>
+                <li><a href="#destinations">Guides</a></li>
+                <li><a href="#stories">Travel Ideas</a></li>
+                <li><a href="#highlights">Stories</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            <div class="nav-actions">
+                <input type="text" placeholder="Search" class="search-box">
+                <button class="login-btn">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Discover the World's <span class="highlight">Hidden Wonders</span></h1>
+                <p>Uncover incredible journeys and hidden gems that ignite your adventurous spirit. From ancient temples to remote islands, discover the spark that turns every trip into a cherished story.</p>
+                <button class="btn btn-primary">Explore now</button>
+            </div>
+            <div class="hero-images">
+                <div class="image-placeholder"></div>
+                <div class="image-placeholder"></div>
+                <div class="image-placeholder"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top Destinations</h2>
+                <div class="destination-filters">
+                    <span class="filter-tag active">Popular</span>
+                    <span class="filter-tag">USA</span>
+                    <span class="filter-tag">Europe</span>
+                    <span class="filter-tag">Asia</span>
+                    <span class="filter-tag">Africa & Middle East</span>
+                    <span class="filter-tag">Oceania & the Pacific</span>
+                    <span class="filter-tag">Central America</span>
+                    <a href="#" class="view-more">View more destinations →</a>
+                </div>
+            </div>
+            
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="image-placeholder"></div>
+                    <h3>Golden Bridge, Bà Nà Hills</h3>
+                    <p>Vietnam</p>
+                </div>
+                <div class="destination-card">
+                    <div class="image-placeholder"></div>
+                    <h3>Santorini</h3>
+                    <p>Greece</p>
+                </div>
+                <div class="destination-card">
+                    <div class="image-placeholder"></div>
+                    <h3>Taj Mahal</h3>
+                    <p>India</p>
+                </div>
+                <div class="destination-card">
+                    <div class="image-placeholder"></div>
+                    <h3>Sydney Harbour Bridge</h3>
+                    <p>Australia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Stories Section -->
+    <section class="stories" id="stories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Stories</h2>
+                <a href="#" class="see-more">See more stories →</a>
+            </div>
+            
+            <div class="stories-grid">
+                <div class="story-card featured">
+                    <div class="image-placeholder"></div>
+                    <h3>Epic road trip through Rajasthan</h3>
+                    <p>A day's journey through the desert landscapes and cultural heritage...</p>
+                    <p class="story-meta">15 days • 10 stops</p>
+                </div>
+                
+                <div class="stories-list">
+                    <div class="story-item">
+                        <div class="story-number">01</div>
+                        <div class="story-info">
+                            <h4>15 South London Markets You'll Love Visit Markets in South...</h4>
+                            <p class="story-meta">Aug 2, 2024 • 8 min read</p>
+                        </div>
+                    </div>
+                    <div class="story-item">
+                        <div class="story-number">02</div>
+                        <div class="story-info">
+                            <h4>50 incredible hotels around the world you can book with points in...</h4>
+                            <p class="story-meta">Aug 1, 2024 • 6 min read</p>
+                        </div>
+                    </div>
+                    <div class="story-item">
+                        <div class="story-number">03</div>
+                        <div class="story-info">
+                            <h4>Visiting Chiangmai: A Budget-Friendly Eats and Attraction...</h4>
+                            <p class="story-meta">Jul 31, 2024 • 5 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trekker's Highlights Section -->
+    <section class="highlights" id="highlights">
+        <div class="container">
+            <h2>Trekker's Highlights</h2>
+            <div class="highlights-content">
+                <div class="highlight-profile">
+                    <div class="profile-avatar"></div>
+                    <h3>Maria Angelica</h3>
+                    <p class="profile-title">Senior Trekker</p>
+                    <div class="rating">⭐⭐⭐⭐⭐ (4.8 rating)</div>
+                    <p class="profile-bio">An unforgettable journey through Turkey awaits! From the bustling bazaars of Istanbul to the serene slopes of Cappadocia, experience a destination that seamlessly blends rich history, warm hospitality, and stunning natural beauty. Don't miss the chance to explore this incredible country and create memories that will last a lifetime.</p>
+                </div>
+                
+                <div class="highlight-image">
+                    <div class="image-placeholder"></div>
+                    <p class="image-caption">Dream holiday road in Turkey</p>
+                </div>
+            </div>
+            <div class="highlight-actions">
+                <button class="btn btn-secondary">See more highlights →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Get Your Travel Inspiration Straight To Your Inbox</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <p class="newsletter-disclaimer">Subscribe to our newsletter and gain exclusive travel guides and tips. Read our <a href="#">Privacy Policy</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Logo</h4>
+                    <p>Follow us on</p>
+                    <div class="social-links">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">in</a>
+                        <a href="#">ig</a>
+                        <a href="#">yt</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">About Treker</a></li>
+                        <li><a href="#">Our story</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Travel Ideas</h4>
+                    <ul>
+                        <li><a href="#">Popular Destinations</a></li>
+                        <li><a href="#">Travel Tips</a></li>
+                        <li><a href="#">Guides</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Trip Experiences</h4>
+                    <ul>
+                        <li><a href="#">Booking</a></li>
+                        <li><a href="#">Flight Deals</a></li>
+                        <li><a href="#">Hotel Booking</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support & Help</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Discover Wonders. All rights reserved.</p>
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
