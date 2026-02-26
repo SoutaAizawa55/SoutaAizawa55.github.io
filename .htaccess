@@ -1,0 +1,22 @@
+# Apache Security Headers
+
+# Prevent browser from interpreting files as something else
+Header set X-Content-Type-Options "nosniff"
+
+# Disable caching for specific content types
+<FilesMatch "\.(html|htm|xml)$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate"
+</FilesMatch>
+
+# Prevent clickjacking attacks
+Header set X-Frame-Options "DENY"
+
+# Protect against XSS
+Header set X-XSS-Protection "1; mode=block"
+
+# HSTS - HTTP Strict Transport Security
+# Uncomment the next line if you want to enforce HSTS
+# Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+# Content Security Policy (CSP) to prevent XSS
+Header set Content-Security-Policy "default-src 'self'; script-src 'self'; object-src 'none';" 
