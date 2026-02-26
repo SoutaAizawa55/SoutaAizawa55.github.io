@@ -1,44 +1,31 @@
-// script.js
+// Enhanced functionality for settings, theme toggle, and interactive tools
 
-// Function to validate forms
-function validateForm(form) {
-    let isValid = true;
-    // Check required fields
-    const requiredFields = form.querySelectorAll('[required]');
-    requiredFields.forEach(field => {
-        if (!field.value) {
-            isValid = false;
-            field.classList.add('error');
-        } else {
-            field.classList.remove('error');
-        }
-    });
-    return isValid;
+// Function to toggle the theme
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('dark-theme');
+    // Save theme preference to local storage
+    localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
 }
 
-// Function for CSRF protection
-function getCsrfToken() {
-    return document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-}
-
-// Function to sanitize user inputs
-function sanitizeInput(input) {
-    const temp = document.createElement('div');
-    temp.textContent = input;
-    return temp.innerHTML; // This will escape HTML characters
-}
-
-// Example usage
-const form = document.querySelector('form');
-form.addEventListener('submit', (e) => {
-    e.preventDefault(); // Prevent form submission for validation
-    if (validateForm(form)) {
-        const csrfToken = getCsrfToken();
-        // Create data object with sanitized inputs
-        const data = { 
-            input: sanitizeInput(form.elements['input'].value),
-            csrfToken: csrfToken
-        };
-        // Further processing...
+// Load the current theme from local storage on startup
+(function () {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
     }
-});
+})();
+
+// Function to initialize interactive tools
+function initializeTools() {
+    // Code to create and manage interactive tools
+}
+
+// Event listener for theme toggle button
+const themeToggleButton = document.getElementById('theme-toggle');
+if (themeToggleButton) {
+    themeToggleButton.addEventListener('click', toggleTheme);
+}
+
+// Initialize tools on page load
+window.onload = initializeTools;
